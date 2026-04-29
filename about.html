@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Coffee Co. Blanche — Gulberg, Lahore</title>
+  <meta name="description" content="The story of Coffee Co. Blanche — Lahore's late-night café where desi nostalgia meets coffee energy."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .page-hero{height:320px;background:linear-gradient(135deg,var(--green-dark),var(--green));display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding-top:72px;}
+    .page-hero h1{font-size:clamp(2rem,5vw,3.5rem);color:var(--cream);}
+    .page-hero p{color:rgba(245,237,216,0.72);margin-top:.6rem;font-size:1rem;}
+    /* Story split */
+    .about-split{display:flex;align-items:center;gap:4rem;flex-wrap:wrap;max-width:1100px;margin:0 auto;padding:5rem 2rem;}
+    .about-split img{flex:1;min-width:260px;max-width:480px;width:100%;border-radius:20px;object-fit:cover;height:440px;box-shadow:0 20px 60px rgba(15,35,24,.2);}
+    .about-split-text{flex:1;min-width:260px;}
+    .about-split-text h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--green-dark);margin-bottom:1.2rem;}
+    .about-split-text p{color:var(--text-mid);line-height:1.85;margin-bottom:1rem;font-size:.95rem;}
+    /* Values */
+    .values-section{background:linear-gradient(160deg,var(--green-dark),var(--green));padding:5rem 2rem;text-align:center;}
+    .values-section h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--cream);margin-bottom:.6rem;}
+    .values-section .sub{color:rgba(245,237,216,.65);margin-bottom:3rem;font-size:.95rem;}
+    .values-grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;max-width:1100px;margin:0 auto;}
+    .value-card{flex:1;min-width:200px;max-width:240px;background:rgba(255,255,255,.06);border:1px solid rgba(201,169,110,.22);border-radius:16px;padding:2rem 1.5rem;transition:var(--transition);}
+    .value-card:hover{border-color:var(--gold);transform:translateY(-6px);background:rgba(255,255,255,.1);}
+    .value-icon{font-size:2.2rem;margin-bottom:1rem;display:block;}
+    .value-card h3{font-size:1rem;color:var(--gold);margin-bottom:.5rem;}
+    .value-card p{font-size:.82rem;color:rgba(245,237,216,.65);line-height:1.65;}
+    /* Events timeline */
+    .events-highlights{padding:5rem 2rem;max-width:1000px;margin:0 auto;}
+    .events-highlights h2{font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--green-dark);margin-bottom:.5rem;text-align:center;}
+    .events-highlights .sub{text-align:center;color:var(--text-mid);margin-bottom:3rem;}
+    .timeline{display:flex;flex-direction:column;gap:1.5rem;}
+    .tl-item{display:flex;gap:1.5rem;align-items:flex-start;background:var(--white);border-radius:14px;padding:1.5rem;box-shadow:0 4px 18px rgba(15,35,24,.07);border-left:4px solid var(--green);transition:var(--transition);}
+    .tl-item:hover{transform:translateX(4px);border-left-color:var(--gold);box-shadow:0 8px 30px rgba(15,35,24,.14);}
+    .tl-icon{font-size:2rem;flex-shrink:0;}
+    .tl-text h4{font-size:1rem;color:var(--green-dark);margin-bottom:.3rem;}
+    .tl-text p{font-size:.83rem;color:var(--text-mid);line-height:1.65;}
+    .tl-badge{display:inline-block;margin-top:.5rem;font-size:.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--green);background:rgba(27,58,45,.08);padding:.25rem .75rem;border-radius:50px;}
+    @media(max-width:768px){.about-split{flex-direction:column;gap:2rem;}.about-split img{height:280px;max-width:100%;}.values-grid{flex-direction:column;align-items:center;}}
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html" aria-label="Coffee Co. Blanche Home">
+    <img src="images/logo.svg" alt="Coffee Co. Blanche" class="nav-logo-img"/>
+    <div class="nav-logo-text">
+      <span class="brand-name">Coffee Co.</span>
+      <span class="brand-sub">Blanch&eacute;</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li><li><a href="locations.html">Locations</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-order-btn" href="menu.html">Order Now</a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a>
+  <a href="about.html">About</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <p class="section-label">Our Story</p>
+  <h1>About Coffee Co. Blanche</h1>
+  <p>Born in Lahore. Built on community. Brewed with love.</p>
+</div>
+
+<!-- STORY -->
+<div class="about-split">
+  <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700&q=80" alt="Coffee Co. Blanche café interior" loading="lazy"/>
+  <div class="about-split-text reveal">
+    <p class="section-label">How It All Began</p>
+    <h2>"Desi Nostalgia Meets Late-Night Coffee Energy"</h2>
+    <p>Coffee Co. Blanche was born from a simple idea: Lahore deserved a café that felt like home — warm, a little chaotic, deeply familiar, and alive after midnight. We opened our doors in Gulberg 3 and never looked back.</p>
+    <p>From post-Iftar pickups to Eid night magic, from live match screenings to parody nights with Offscript — CCB isn't just a café, it's a feeling. The kind where every corner tells a story and every cup is a reason to stay a little longer.</p>
+    <p>We're open daily from <strong>5PM to 2AM</strong>, because great conversations don't happen at noon.</p>
+    <a class="btn-primary" href="menu.html" style="margin-top:1.5rem;display:inline-flex;">Explore Our Menu</a>
+  </div>
+</div>
+
+<!-- VALUES -->
+<div class="values-section">
+  <p class="section-label" style="color:var(--gold-light);">What We Stand For</p>
+  <h2>The CCB Way</h2>
+  <p class="sub">Every cup, every event, every late night — guided by these.</p>
+  <div class="values-grid">
+    <div class="value-card reveal"><span class="value-icon">🌙</span><h3>Late-Night Vibes</h3><p>We exist for the night owls, the after-dinner crowd, and everyone who does their best thinking after 10PM.</p></div>
+    <div class="value-card reveal"><span class="value-icon">🏙️</span><h3>Lahore at Heart</h3><p>Desi nostalgia in every corner. The energy of Lahore's streets in every sip.</p></div>
+    <div class="value-card reveal"><span class="value-icon">🎉</span><h3>Community First</h3><p>From crochet sessions to cricket screenings — we build spaces where people belong.</p></div>
+    <div class="value-card reveal"><span class="value-icon">☕</span><h3>Quality Always</h3><p>Twisted flavours, premium ingredients. We never cut corners on what goes in your cup.</p></div>
+  </div>
+</div>
+
+<!-- EVENTS HIGHLIGHTS -->
+<div class="events-highlights">
+  <p class="section-label" style="text-align:center;">What Goes Down at CCB</p>
+  <h2>More Than Just Coffee</h2>
+  <p class="sub">A peek at what makes every week at Blanche different.</p>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <span class="tl-icon">🎨</span>
+      <div class="tl-text">
+        <h4>Introduction to Illustration — with Art de Yahya</h4>
+        <p>Part 1 and Part 2 both sold out. Creative workshops that blend art and café culture for Lahore's creative community.</p>
+        <span class="tl-badge">Monthly Popup</span>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-icon">🎭</span>
+      <div class="tl-text">
+        <h4>Parody Night with Offscript</h4>
+        <p>Live comedy parody nights that had the whole café in stitches. Coffee in one hand, laughs on the other.</p>
+        <span class="tl-badge">Special Event</span>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-icon">🕹️</span>
+      <div class="tl-text">
+        <h4>NOCTA Y2K — Fashion Themed Coffee Rave</h4>
+        <p>Y2K fashion, great music and even better coffee. CCB's most talked-about event — and it's only the beginning.</p>
+        <span class="tl-badge">Themed Night</span>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-icon">🧶</span>
+      <div class="tl-text">
+        <h4>Crochet &amp; Coffee Nights</h4>
+        <p>Hooks, yarn and hot drinks. A surprisingly therapeutic combo that became a weekly favourite.</p>
+        <span class="tl-badge">Weekly</span>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-icon">🏏</span>
+      <div class="tl-text">
+        <h4>IND vs PAK Live Screening</h4>
+        <p>RS. 1000 ticket — includes a free coffee. You bring the passion, we bring the screen and the brews.</p>
+        <span class="tl-badge">RS. 1000 · Free Coffee</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="newsletter-strip">
+  <h2>Stay in the Loop</h2>
+  <p>Get event announcements, new drink launches and exclusive CCB offers straight to your inbox.</p>
+  <form class="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Email"/><button type="submit">Subscribe</button></form>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+      <img src="images/logo.svg" alt="Coffee Co. Blanche" class="footer-logo-img"/>
+      <div class="footer-logo-text">
+        <div class="brand-name">Coffee Co.</div>
+        <div class="brand-sub">Blanch&eacute; &bull; Est. 2025</div>
+      </div>
+    </div>
+      <p class="footer-tagline">Gulberg 3, Lahore, Pakistan<br/>Open 5PM – 2AM Daily<br/>No Stags · Good Vibes Only</p>
+      <div class="social-links"><a class="social-link" href="#">📸</a><a class="social-link" href="#">📘</a><a class="social-link" href="#">🎵</a></div>
+    </div>
+    <div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Visit</h4><ul><li><a href="locations.html">Gulberg 3, Lahore</a></li><li><a href="#">Open 5PM – 2AM</a></li><li><a href="#">Events &amp; Popups</a></li></ul></div>
+    <div class="footer-col"><h4>Info</h4><ul><li><a href="#">No Stags Policy</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Coffee Co. Blanche — Gulberg 3, Lahore.</span><span>Twisted, but in a good way. ☕</span></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

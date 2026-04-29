@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Coffee Co. Blanche logo">
+  <!-- Dark green background -->
+  <rect width="200" height="200" fill="#1B4332"/>
+
+  <!-- Outer oval — thick cream stroke (the bean shell) -->
+  <ellipse cx="100" cy="104" rx="76" ry="54"
+    fill="none"
+    stroke="#F0E6CC"
+    stroke-width="13"
+    stroke-linejoin="round"/>
+
+  <!-- S-curve wave inside the bean (the crease) -->
+  <path d="M26 104 C26 68 62 68 100 104 C138 140 174 140 174 104"
+    fill="none"
+    stroke="#F0E6CC"
+    stroke-width="13"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- TM mark -->
+  <text x="168" y="48" font-size="10" fill="#F0E6CC" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0.5">TM</text>
+</svg>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locations | Coffee Co. Blanche — Gulberg 3, Lahore</title>
+  <meta name="description" content="Find Coffee Co. Blanche in Gulberg 3, Lahore. Open daily 5PM–2AM."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .page-hero{height:300px;background:linear-gradient(135deg,var(--green-dark),var(--green));display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding-top:72px;}
+    .page-hero h1{font-size:clamp(2rem,5vw,3.5rem);color:var(--cream);}
+    .page-hero p{color:rgba(245,237,216,0.7);margin-top:.6rem;}
+    .loc-wrapper{max-width:1200px;margin:0 auto;padding:4rem 2rem;display:flex;gap:2.5rem;flex-wrap:wrap;}
+    .loc-map{flex:1.4;min-width:280px;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(15,35,24,.15);min-height:500px;}
+    .loc-map iframe{width:100%;height:100%;min-height:500px;border:none;display:block;}
+    .loc-list{flex:1;min-width:260px;display:flex;flex-direction:column;gap:1.25rem;}
+    .loc-list h2{font-size:1.5rem;color:var(--green-dark);margin-bottom:.25rem;}
+    .loc-list .sub{font-size:.88rem;color:var(--text-mid);margin-bottom:1rem;}
+    .loc-card{background:var(--white);border-radius:14px;padding:1.5rem;box-shadow:0 4px 18px rgba(15,35,24,.09);border:2px solid transparent;transition:var(--transition);}
+    .loc-card:hover{border-color:var(--gold);transform:translateX(4px);box-shadow:0 8px 30px rgba(15,35,24,.15);}
+    .loc-card-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;}
+    .loc-dot{width:10px;height:10px;border-radius:50%;background:var(--green);flex-shrink:0;}
+    .loc-card h3{font-size:1.05rem;color:var(--green-dark);}
+    .loc-card p{font-size:.85rem;color:var(--text-mid);line-height:1.65;margin-bottom:.6rem;}
+    .loc-hours{font-size:.82rem;color:var(--text-mid);}
+    .loc-hours strong{color:var(--green);font-weight:600;}
+    .loc-badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem;}
+    .loc-badge{font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:.25rem .7rem;border-radius:50px;background:rgba(27,58,45,.08);color:var(--green);}
+    .loc-badge.gold{background:rgba(201,169,110,.12);color:var(--gold);}
+    .loc-cta{display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;font-size:.82rem;font-weight:600;color:var(--green);border-bottom:1px solid var(--green);transition:color .2s;}
+    .loc-cta:hover{color:var(--gold);border-color:var(--gold);}
+    .info-strip{background:var(--green);display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;padding:2.5rem 2rem;}
+    .info-strip-item{text-align:center;color:var(--cream);}
+    .info-strip-item .icon{font-size:1.8rem;display:block;margin-bottom:.4rem;}
+    .info-strip-item h4{font-size:.95rem;font-weight:600;margin-bottom:.2rem;}
+    .info-strip-item p{font-size:.8rem;color:rgba(245,237,216,.7);}
+    @media(max-width:768px){.loc-wrapper{flex-direction:column;}.loc-map{min-height:320px;}.info-strip{gap:1.5rem;}}
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html" aria-label="Coffee Co. Blanche Home">
+    <img src="images/logo.svg" alt="Coffee Co. Blanche" class="nav-logo-img"/>
+    <div class="nav-logo-text">
+      <span class="brand-name">Coffee Co.</span>
+      <span class="brand-sub">Blanch&eacute;</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li><li><a href="locations.html">Locations</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-order-btn" href="menu.html">Order Now</a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a>
+  <a href="about.html">About</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <p class="section-label">Come Find Us</p>
+  <h1>We're in Gulberg, Lahore</h1>
+  <p>One location. Maximum vibes. Open 5PM – 2AM every day.</p>
+</div>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="info-strip-item">
+    <span class="icon">📍</span>
+    <h4>Our Address</h4>
+    <p>Gulberg 3, Lahore, Pakistan</p>
+  </div>
+  <div class="info-strip-item">
+    <span class="icon">🕐</span>
+    <h4>Opening Hours</h4>
+    <p>Daily · 5PM – 2AM</p>
+  </div>
+  <div class="info-strip-item">
+    <span class="icon">📞</span>
+    <h4>Call Us</h4>
+    <p>Drop us a DM on Facebook</p>
+  </div>
+  <div class="info-strip-item">
+    <span class="icon">🚗</span>
+    <h4>Parking</h4>
+    <p>Street parking available nearby</p>
+  </div>
+</div>
+
+<!-- MAP + LISTING -->
+<div class="loc-wrapper">
+  <div class="loc-map reveal">
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=74.3200,31.5100,74.3600,31.5350&layer=mapnik&marker=31.5200,74.3400"
+      title="Coffee Co. Blanche — Gulberg 3, Lahore"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="loc-list reveal">
+    <h2>Coffee Co. Blanche</h2>
+    <p class="sub">Our flagship café in the heart of Lahore.</p>
+
+    <div class="loc-card">
+      <div class="loc-card-header">
+        <div class="loc-dot"></div>
+        <h3>Gulberg 3 — Main Branch</h3>
+      </div>
+      <p>📍 Gulberg 3, Lahore, Pakistan</p>
+      <p class="loc-hours">Hours: <strong>Daily 5PM – 2AM</strong></p>
+      <div class="loc-badges">
+        <span class="loc-badge">Dine-In</span>
+        <span class="loc-badge">Late Night</span>
+        <span class="loc-badge gold">Events &amp; Popups</span>
+        <span class="loc-badge">No Stags</span>
+      </div>
+      <a class="loc-cta" href="https://maps.google.com/?q=Gulberg+3+Lahore" target="_blank" rel="noopener">Get Directions →</a>
+    </div>
+
+    <div class="loc-card" style="background:rgba(27,58,45,.04);border-color:rgba(27,58,45,.1);">
+      <div class="loc-card-header">
+        <div class="loc-dot" style="background:var(--gold);"></div>
+        <h3>Visited by Our Community</h3>
+      </div>
+      <p style="font-size:.83rem;color:var(--text-mid);line-height:1.7;">
+        ⭐ <em>"Every corner feels like Eid night magic."</em><br/><br/>
+        ⭐ <em>"Best post-Iftar spot in Lahore — period."</em><br/><br/>
+        ⭐ <em>"The Hazelnut Ferrero Frappé is absolutely nuts (in the best way)."</em>
+      </p>
+      <div class="loc-badges" style="margin-top:1rem;">
+        <span class="loc-badge gold">Visited Dec 2025</span>
+        <span class="loc-badge gold">Visited Feb 2026</span>
+      </div>
+    </div>
+
+    <a class="btn-primary" href="contact.html" style="display:inline-flex;margin-top:.5rem;">Contact Us</a>
+  </div>
+</div>
+
+<div class="newsletter-strip">
+  <h2>Never Miss an Event</h2>
+  <p>Subscribe and be the first to know about new popups, themed nights and special deals.</p>
+  <form class="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Email"/><button type="submit">Subscribe</button></form>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+      <img src="images/logo.svg" alt="Coffee Co. Blanche" class="footer-logo-img"/>
+      <div class="footer-logo-text">
+        <div class="brand-name">Coffee Co.</div>
+        <div class="brand-sub">Blanch&eacute; &bull; Est. 2025</div>
+      </div>
+    </div>
+      <p class="footer-tagline">Gulberg 3, Lahore, Pakistan<br/>Open 5PM – 2AM Daily</p>
+      <div class="social-links"><a class="social-link" href="#">📸</a><a class="social-link" href="#">📘</a><a class="social-link" href="#">🎵</a></div>
+    </div>
+    <div class="footer-col"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Visit</h4><ul><li><a href="#">Gulberg 3, Lahore</a></li><li><a href="#">Open 5PM – 2AM</a></li><li><a href="#">Events</a></li></ul></div>
+    <div class="footer-col"><h4>Info</h4><ul><li><a href="#">No Stags Policy</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Coffee Co. Blanche — Gulberg 3, Lahore.</span><span>Twisted, but in a good way. ☕</span></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
